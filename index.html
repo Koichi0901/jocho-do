@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>情緒堂 ─ Jocho-do Kyoto | 情緒・意味生成・関係性を探究する京都の知的拠点</title>
-  <meta name="description" content="情緒堂は、情緒・意味生成・関係性を探究する京都の知的拠点です。学術と実践、研究と対話、論理と感性をつなぎ、未来の組織と社会を構想します。">
-  <meta property="og:title" content="情緒堂 ─ Jocho-do Kyoto">
-  <meta property="og:description" content="情緒・意味生成・関係性を探究する京都の知的拠点。問いが息をしつづける場所を。">
+  <title>æç·å  â Jocho-do Kyoto | æç·ã»æå³çæã»é¢ä¿æ§ãæ¢ç©¶ããäº¬é½ã®ç¥çæ ç¹</title>
+  <meta name="description" content="æç·å ã¯ãæç·ã»æå³çæã»é¢ä¿æ§ãæ¢ç©¶ããäº¬é½ã®ç¥çæ ç¹ã§ããå­¦è¡ã¨å®è·µãç ç©¶ã¨å¯¾è©±ãè«çã¨ææ§ãã¤ãªããæªæ¥ã®çµç¹ã¨ç¤¾ä¼ãæ§æ³ãã¾ãã">
+  <meta property="og:title" content="æç·å  â Jocho-do Kyoto">
+  <meta property="og:description" content="æç·ã»æå³çæã»é¢ä¿æ§ãæ¢ç©¶ããäº¬é½ã®ç¥çæ ç¹ãåããæ¯ããã¤ã¥ããå ´æãã">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:site_name" content="情緒堂">
+  <meta property="og:site_name" content="æç·å ">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
@@ -129,7 +129,7 @@
       .nav{position:fixed;top:0;right:-100%;width:280px;height:100vh;background-color:var(--matcha-deep);flex-direction:column;justify-content:center;align-items:center;gap:32px;transition:right 0.4s var(--ease);box-shadow:-4px 0 24px rgba(0,0,0,0.15)}
       .nav.open{right:0}.nav.open .nav__link{color:rgba(255,255,255,0.8);font-size:15px}
       .nav-toggle{display:block;z-index:101}
-      .activities__grid{grid-template-columns:1fr}.people__grid{grid-template-columns:1fr;gap:48px}
+      .activities__grid{grid-template-columns:1fr}.people__grid,.people__grid[style]{grid-template-columns:1fr!important;max-width:100%!important;gap:48px}
       .journal-item{flex-direction:column;gap:8px}.footer__inner{flex-direction:column;align-items:flex-start;gap:24px}
       .hero__title{letter-spacing:0.04em}
     }
@@ -142,134 +142,128 @@
 <body>
   <header class="header" id="header" role="banner">
     <div class="header__inner">
-      <a href="#" class="header__logo" aria-label="情緒堂トップへ">情緒堂<span>Jocho-do Kyoto</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <a href="#" class="header__logo" aria-label="æç·å ãããã¸">æç·å <span>Jocho-do Kyoto</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="ã¡ãã¥ã¼ãéã" aria-expanded="false">
         <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
       </button>
-      <nav class="nav" id="nav" role="navigation" aria-label="メインナビゲーション">
-        <a href="#about" class="nav__link">情緒堂とは</a>
-        <a href="#themes" class="nav__link">探究テーマ</a>
-        <a href="#activities" class="nav__link">活動</a>
-        <a href="#vision" class="nav__link">目指すもの</a>
-        <a href="#people" class="nav__link">人</a>
-        <a href="#journal" class="nav__link">ジャーナル</a>
-        <a href="#contact" class="nav__link">お問い合わせ</a>
+      <nav class="nav" id="nav" role="navigation" aria-label="ã¡ã¤ã³ããã²ã¼ã·ã§ã³">
+        <a href="#about" class="nav__link">æç·å ã¨ã¯</a>
+        <a href="#theory" class="nav__link">çè«</a>
+        <a href="#themes" class="nav__link">æ¢ç©¶ãã¼ã</a>
+        <a href="#activities" class="nav__link">æ´»å</a>
+        <a href="#vision" class="nav__link">ç®æããã®</a>
+        <a href="#people" class="nav__link">äºº</a>
+        <a href="#journal" class="nav__link">ã¸ã£ã¼ãã«</a>
+        <a href="#contact" class="nav__link">ãåãåãã</a>
       </nav>
     </div>
   </header>
   <main>
-    <section class="hero" id="hero" aria-label="ヒーロー">
+    <section class="hero" id="hero" aria-label="ãã¼ã­ã¼">
       <p class="hero__badge">Institute of Affective Inquiry</p>
-      <h1 class="hero__title">情緒とは、<br>意味が生まれる前の<br>静かな震えである。</h1>
-      <p class="hero__subtitle">京都から、問いとともに思考する。</p>
+      <h1 class="hero__title">æç·ã¨ã¯ã<br>æå³ãçã¾ããåã®<br>éããªéãã§ããã</h1>
+      <p class="hero__subtitle">äº¬é½ãããåãã¨ã¨ãã«æèããã</p>
       <div class="hero__scroll" aria-hidden="true"><span class="hero__scroll-text">scroll</span><span class="hero__scroll-line"></span></div>
     </section>
-    <section class="section about" id="about" aria-label="情緒堂について">
+    <section class="section about" id="about" aria-label="æç·å ã«ã¤ãã¦">
       <div class="container fade-in">
         <p class="section__label">About</p>
-        <h2 class="section__heading section__heading--with-line">情緒堂について</h2>
+        <h2 class="section__heading section__heading--with-line">æç·å ã«ã¤ãã¦</h2>
         <div class="section__body">
-          <p>情緒堂は、情緒・意味生成・関係性を探究する京都の知的拠点です。</p>
-          <p>ここでいう「情緒」とは、単なる感情のことではありません。人が何かに意味を見出し、他者とつながり、まだ名前のない問いを抱くとき、その根底で動いている知の層を指します。</p>
-          <p>私たちは、学術と実践の境界を越え、研究・対話・協働を通じて、組織と社会のあり方を問い続けます。効率や制度だけでは捉えきれないもの――揺らぎ、余白、温度、関係の質。それらを丁寧に扱い、未来の組織と共同体を構想する場です。</p>
+          <p>æç·å ã¯ãæç·ã»æå³çæã»é¢ä¿æ§ãæ¢ç©¶ããäº¬é½ã®ç¥çæ ç¹ã§ãã</p>
+          <p>ããã§ãããæç·ãã¨ã¯ãåãªãææã®ãã¨ã§ã¯ããã¾ãããäººãä½ãã«æå³ãè¦åºããä»èã¨ã¤ãªãããã¾ã ååã®ãªãåããæ±ãã¨ãããã®æ ¹åºã§åãã¦ããç¥ã®å±¤ãæãã¾ãã</p>
+          <p>ç§ãã¡ã¯ãå­¦è¡ã¨å®è·µã®å¢çãè¶ããç ç©¶ã»å¯¾è©±ã»ååãéãã¦ãçµç¹ã¨ç¤¾ä¼ã®ããæ¹ãåãç¶ãã¾ããå¹çãå¶åº¦ã ãã§ã¯æããããªããã®ââæºãããä½ç½ãæ¸©åº¦ãé¢ä¿ã®è³ªãããããä¸å¯§ã«æ±ããæªæ¥ã®çµç¹ã¨å±åä½ãæ§æ³ããå ´ã§ãã</p>
+          <p>æç·å ã¯ãã·ã³ã¯ã¿ã³ã¯äºæ¥­ã¨ãã¤ã³ããã«ãµã¼ãã¹ãä¸¡è¼ªã¨ããä¸è¬ç¤¾å£æ³äººã§ããçµç¹çå½è«ã«åºã¥ãã³ã³ãµã«ãã£ã³ã°ã»ç ä¿®ã¨ããããã¹ããµã¦ãããã¼ããã£ã¼ãéããèº«ä½çãªæç·ã®åå¾©ãè«çã¨ææ§ãç§å­¦ã¨æªç§å­¦ãã¤ãªãå ´ã¨ãã¦ã2027å¹´åº¦ã®è¨­ç«ãäºå®ãã¦ãã¾ãã</p>
+          <p style="margin-top:2em;font-size:13px;color:var(--sumi-light);letter-spacing:0.04em;">æç·å ã®çµç¹ã¯ãæ°å¹¹ç·ã¢ãã«ãã§éå¶ããã¾ããä¸­å¤®ã®æ©é¢è»ãå¼ã£å¼µãã®ã§ã¯ãªãããããããèªå¾çã«åããªããé£çµããåæ£åã®çµç¹ãä»£è¡¨çäºã»é«æ©æµ©ä¸ãAI CEOã»æç·åãããã¦åæ¥­ãã¼ããã¼ããå¯¾ç­ã«ç¥ãç´¡ãæ§é ã§ãã</p>
         </div>
       </div>
     </section>
     <div class="matcha-divider" aria-hidden="true"></div>
-    <section class="section themes-section" id="themes" aria-label="探究テーマ">
-      <div class="container fade-in">
-        <p class="section__label">Themes</p>
-        <h2 class="section__heading section__heading--with-line">探究テーマ</h2>
-        <p class="themes__lead">情緒堂は、以下の領域を横断的に探究しています。</p>
+    <section class="section" id="theory" aria-label="çè«" style="background-color:var(--white);">
+      <div class="container container--wide fade-in">
+        <p class="section__label">Theory</p>
+        <h2 class="section__heading section__heading--with-line">çè«</h2>
+        <p style="font-size:15px;color:var(--sumi-light);margin-bottom:56px;line-height:1.8;">æç·å ã®ç¥çåºç¤ãæ§æããçè«ä½ç³»ã§ãããããã¯ç¬ç«ããæ¦å¿µã§ã¯ãªããã²ã¨ã¤ã®ä¸çè¦³ããææ©çã«ç¹ãã£ã¦ãã¾ãã</p>
         <div class="themes__grid">
-          <div class="theme-card"><p class="theme-card__number">01</p><h3 class="theme-card__title">意味生成と情緒</h3><p class="theme-card__text">人はどのようにして「意味」を生み出すのか。情緒が知性や創造性の基盤であるという仮説を、理論と実践の両面から検討します。</p></div>
-          <div class="theme-card"><p class="theme-card__number">02</p><h3 class="theme-card__title">組織と共同体</h3><p class="theme-card__text">効率やKPIでは測れない組織の力とは何か。関係性の質、対話の深度、場の温度から組織を捉え直します。</p></div>
-          <div class="theme-card"><p class="theme-card__number">03</p><h3 class="theme-card__title">AI時代の人間性</h3><p class="theme-card__text">自動化と最適化が進む時代に、人間にしかできない営みとは何か。感受性・問い・揺らぎの価値を再定位します。</p></div>
-          <div class="theme-card"><p class="theme-card__number">04</p><h3 class="theme-card__title">教育と創造性</h3><p class="theme-card__text">学びとは何か。創造性はどこから生まれるか。答えを急がない教育のあり方を探ります。</p></div>
-          <div class="theme-card"><p class="theme-card__number">05</p><h3 class="theme-card__title">京都と思想風土</h3><p class="theme-card__text">余白を重んじ、時間の厚みを信じる京都の知的風土。この場所に根ざすことの意味を探究します。</p></div>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="activities" aria-label="活動内容">
-      <div class="container container--wide fade-in">
-        <p class="section__label">Activities</p>
-        <h2 class="section__heading section__heading--with-line">活動</h2>
-        <p class="activities__lead">情緒堂の活動は、知の探究と社会への接続の両方を大切にしています。</p>
-        <div class="activities__grid">
-          <div class="activity-card"><div class="activity-card__icon"></div><h3 class="activity-card__title">研究会・読書会</h3><p class="activity-card__text">月例の研究会を中心に、領域を横断した知的対話を重ねています。</p></div>
-          <div class="activity-card"><div class="activity-card__icon"></div><h3 class="activity-card__title">公開講座・ワークショップ</h3><p class="activity-card__text">研究成果を開き、実務家や市民と共有する場を定期的に開催しています。</p></div>
-          <div class="activity-card"><div class="activity-card__icon"></div><h3 class="activity-card__title">企業・組織との共同研究</h3><p class="activity-card__text">組織の「意味の層」に向き合う共同プロジェクトに取り組んでいます。</p></div>
-          <div class="activity-card"><div class="activity-card__icon"></div><h3 class="activity-card__title">出版・発信</h3><p class="activity-card__text">ジャーナル、ノート、エッセイを通じて、探究の過程を社会に開いています。</p></div>
-        </div>
-      </div>
-    </section>
-    <section class="section vision-section" id="vision" aria-label="情緒堂が目指すもの">
-      <div class="container fade-in">
-        <p class="section__label">Vision</p>
-        <h2 class="section__heading section__heading--with-line">目指すもの</h2>
-        <blockquote class="vision__quote">問いが死なない場を、つくりたい。</blockquote>
-        <div class="vision__body">
-          <p>答えが出ることよりも、問いが生き続けることのほうが、時に重要です。</p>
-          <p>効率が善とされる時代にあって、立ち止まり、揺らぎ、意味を問い直すことは、静かな抵抗であり、未来への投企でもあります。</p>
-          <p>情緒堂は、組織にも、個人にも、社会にも、もうひとつの座標軸を提案します。それは、数値では測れない「意味の手触り」を大切にする知の態度です。</p>
-        </div>
-      </div>
-    </section>
-    <section class="section people-section" id="people" aria-label="発起人・メンバー紹介">
-      <div class="container container--wide fade-in">
-        <p class="section__label">People</p>
-        <h2 class="section__heading section__heading--with-line">人</h2>
-        <p class="people__lead">情緒堂は、領域を越えた研究者・実践者が集う場です。</p>
-        <div class="people__grid people__grid--single">
-          <div class="person-card">
-            <div class="person-card__avatar"><span class="person-card__avatar-text" aria-hidden="true">髙</span></div>
-            <p class="person-card__name">髙橋 浩一</p>
-            <p class="person-card__role">発起人 ─ 東京農工大学大学院 工学府 産業技術専攻（MOT）教授</p>
-            <p class="person-card__quote">「組織の情緒に、もう一度光を当てたい。」</p>
+          <div class="theme-card">
+            <p class="theme-card__number">Foundation</p>
+            <h3 class="theme-card__title">çµç¹çå½è«ï¼Organization Life Theoryï¼</h3>
+            <p class="theme-card__text">çµç¹ãæ©æ¢°ã§ã¯ãªããçå½ä½ãã¨ãã¦æããçè«çæ çµã¿ãå¹çãæ§é ã®åã«ãçµç¹ã®ä¸­ã«çå½æ§ãå®¿ãã¨ããä¸çè¦³ããLife Precedes Organizationï¼çå½ã¯çµç¹ã«åç«ã¤ï¼ããæ ¸å¿çå½é¡ã¨ããã</p>
+          </div>
+          <div class="theme-card">
+            <p class="theme-card__number">Core Model</p>
+            <h3 class="theme-card__title">Pre-SECIã¢ãã«</h3>
+            <p class="theme-card__text">éä¸­éæ¬¡éã®SECIã¢ãã«ï¼æé»ç¥ã¨å½¢å¼ç¥ã®å¤æï¼ã®ãåæ®µéãã«ãåæåï¼Proto-affectï¼ãä½ç½®ã¥ãããäººãä½ããç¥ãåã«ãèº«ä½ã®å¥¥ã§åãã¦ããåèªç¥çãªéããæé»ç¥ãçã¾ããåã«ãä½ãããã®ãããã®åãã¸ã®ç­ãã</p>
+          </div>
+          <div class="theme-card">
+            <p class="theme-card__number">Method</p>
+            <h3 class="theme-card__title">çµç¹ãã¸ã¿ã«ãã¤ã³ï¼ODTï¼</h3>
+            <p class="theme-card__text">çµç¹ã®çå½æ§ãè¦³æ¸¬ããæ¢ç´¢ããããã®5å±¤ã¹ã¿ãã¯ãè¦³æ¸¬ï¼fiction-freeãªãã¼ã¿ï¼â æ¢ç´¢ï¼é ããæ©æ©ã®çºè¦ï¼â å­¦ç¿ï¼ãã¿ã¼ã³ã®æ½åºï¼â æææ±ºå®ï¼ã·ããªãªã®æ¯è¼ï¼â åå®¹ï¼ã»ã³ã¹ã¡ã¤ã­ã³ã°ï¼ãçµç¹ã®ã³ãã¼ã­ãããã§ã¯ãªãããæ©è½ã¢ãã«ãã¨ãã¦ã®ãã¸ã¿ã«ãã¤ã³ã</p>
+          </div>
+          <div class="theme-card">
+            <p class="theme-card__number">Metaphor</p>
+            <h3 class="theme-card__title">æ°å¹¹ç·ã¢ãã«</h3>
+            <p class="theme-card__text">è¸æ°æ©é¢è»åï¼ä¸­å¤®éæ¨©ã»ä¸äººãå¼ã£å¼µãï¼ããæ°å¹¹ç·åï¼åæ£èªå¾ã»åè»ä¸¡ãååãæã¤ï¼ã¸ã®çµç¹è«çè»¢æãAIæä»£ã®çµç¹ã¯ãæå ±ã®æ°ä¸»åã«ãããä¸äººã®ãªã¼ãã¼ã§ã¯ãªããå¨å¡ãèªå¾çã«åãæ§é ã¸ã¨ç§»è¡ããã</p>
           </div>
         </div>
       </div>
     </section>
     <div class="matcha-divider" aria-hidden="true"></div>
-    <section class="section" id="journal" aria-label="ジャーナル">
+    <section class="section themes-section" id="themes" aria-label="æ¢ç©¶ãã¼ã">
       <div class="container fade-in">
-        <p class="section__label">Journal</p>
-        <h2 class="section__heading section__heading--with-line">ジャーナル</h2>
-        <p class="journal__lead">探究の途上にある思考の断片を、ここに記録しています。</p>
-        <div class="journal__list">
-          <a href="#" class="journal-item"><span class="journal-item__date">2026.03.10</span><span class="journal-item__title">情緒とは何か──意味生成の基盤としての再定義</span><span class="journal-item__tag">探究ノート</span></a>
-          <a href="#" class="journal-item"><span class="journal-item__date">2026.02.22</span><span class="journal-item__title">組織における「余白」の機能について</span><span class="journal-item__tag">研究会記録</span></a>
-          <a href="#" class="journal-item"><span class="journal-item__date">2026.01.15</span><span class="journal-item__title">AIは問いを立てられるか──感受性の再定位に向けて</span><span class="journal-item__tag">エッセイ</span></a>
+        <p class="section__label">Themes</p>
+        <h2 class="section__heading section__heading--with-line">æ¢ç©¶ãã¼ã</h2>
+        <p class="themes__lead">æç·å ã¯ãä»¥ä¸ã®é åãæ¨ªæ­çã«æ¢ç©¶ãã¦ãã¾ãã</p>
+        <div class="themes__grid">
+          <div class="theme-card"><p class="theme-card__number">01</p><h3 class="theme-card__title">æå³çæã¨æç·</h3><p class="theme-card__text">äººã¯ã©ã®ããã«ãã¦ãæå³ããçã¿åºãã®ããæç·ãç¥æ§ãåµé æ§ã®åºç¤ã§ããã¨ããä»®èª¬ããçè«ã¨å®è·µã®ä¸¡é¢ããæ¤è¨ãã¾ãã</p></div>
+          <div class="theme-card"><p class="theme-card__number">02</p><h3 class="theme-card__title">çµç¹ã¨å±åä½</h3><p class="theme-card__text">å¹çãKPIã§ã¯æ¸¬ããªãçµç¹ã®åã¨ã¯ä½ããé¢ä¿æ§ã®è³ªãå¯¾è©±ã®æ·±åº¦ãå ´ã®æ¸©åº¦ããçµç¹ãæãç´ãã¾ãã</p></div>
+          <div class="theme-card"><p class="theme-card__number">03</p><h3 class="theme-card__title">AIæä»£ã®äººéæ§</h3><p class="theme-card__text">èªååã¨æé©åãé²ãæä»£ã«ãäººéã«ããã§ããªãå¶ã¿ã¨ã¯ä½ããæåæ§ã»åãã»æºããã®ä¾¡å¤ãåå®ä½ãã¾ãã</p></div>
+          <div class="theme-card"><p class="theme-card__number">04</p><h3 class="theme-card__title">æè²ã¨åµé æ§</h3><p class="theme-card__text">å­¦ã³ã¨ã¯ä½ããåµé æ§ã¯ã©ãããçã¾ããããç­ããæ¥ããªãæè²ã®ããæ¹ãæ¢ãã¾ãã</p></div>
+          <div class="theme-card"><p class="theme-card__number">05</p><h3 class="theme-card__title">äº¬é½ã¨ææ³é¢¨å</h3><p class="theme-card__text">ä½ç½ãéãããæéã®åã¿ãä¿¡ããäº¬é½ã®ç¥çé¢¨åããã®å ´æã«æ ¹ãããã¨ã®æå³ãæ¢ç©¶ãã¾ãã</p></div>
         </div>
       </div>
     </section>
-    <section class="section contact-section" id="contact" aria-label="お問い合わせ">
-      <div class="container fade-in">
-        <p class="section__label">Contact</p>
-        <h2 class="section__heading section__heading--with-line">お問い合わせ</h2>
-        <p class="contact__text">情緒堂へのご質問、共同研究のご相談、取材のお申し込みなど、お気軽にご連絡ください。</p>
-        <form class="contact__form" action="#" method="post" novalidate>
-          <div class="form-group"><label for="name">お名前</label><input type="text" id="name" name="name" required autocomplete="name" placeholder="例：山田 太郎"></div>
-          <div class="form-group"><label for="email">メールアドレス</label><input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com"></div>
-          <div class="form-group"><label for="subject">ご用件</label><select id="subject" name="subject"><option value="" disabled selected>選択してください</option><option value="general">一般的なお問い合わせ</option><option value="research">共同研究のご相談</option><option value="event">イベント・講座について</option><option value="media">取材のお申し込み</option><option value="other">その他</option></select></div>
-          <div class="form-group"><label for="message">メッセージ</label><textarea id="message" name="message" required placeholder="お問い合わせ内容をご記入ください。"></textarea></div>
-          <button type="submit" class="btn">送信する</button>
-        </form>
+    <section class="section" id="activities" aria-label="æ´»ååå®¹">
+      <div class="container container--wide fade-in">
+        <p class="section__label">Activities</p>
+        <h2 class="section__heading section__heading--with-line">æ´»å</h2>
+        <p class="activities__lead">æç·å ã¯ãã·ã³ã¯ã¿ã³ã¯äºæ¥­ã¨ãã¤ã³ããã«ãµã¼ãã¹ã®äºã¤ã®æ±ã§æ´»åãã¦ãã¾ããæèã¨èº«ä½ãè«çã¨ææ§ãã¤ãªããã¨ããæç·å ã®æ ¹åºã«ããä¿¡å¿µã§ãã</p>
+        <div class="activities__grid">
+          <div class="activity-card"><div class="activity-card__icon"></div><h3 class="activity-card__title">çµç¹éçºã³ã³ãµã«ãã£ã³ã°</h3><p class="activity-card__text">çµç¹çå½è«ã«åºã¥ãçµç¹è¨ºæ­ã¨éçºãODTï¼çµç¹ãã¸ã¿ã«ãã¤ã³ï¼ãç¨ãã¦ãæ°å¤ã§ã¯è¦ããªãçµç¹ã®æ©æ¦ã¨çå½æ§ãå¯è¦åãã¾ãã</p></div>
+          <div class="activity-card"><div class="activity-card__icon"></div><h3 class="activity-card__title">ç ä¿®ã»è¬æ¼</h3><p class="activity-card__text">ODTä½é¨æ¼ç¿ãPre-SECIã¢ãã«ã®ã¯ã¼ã¯ã·ã§ãããAIæä»£ã®çµç¹ããã¸ã¡ã³ãè¬æ¼ãçè«ã¨ä½é¨ãçµ±åããç¬èªã®ãã­ã°ã©ã ãæä¾ãã¾ãã</p></div>
+          <div class="activity-card"><div class="activity-card__icon"></div><h3 class="activity-card__title">ãã¤ã³ããã«ãµã¼ãã¹</h3><p class="activity-card__text">ãããã¹ããµã¦ãã¨ãã¼ããã£ã¼ãèº«ä½ãéãã¦æç·ã«è§¦ããå ´ãçè«ã§ã¯å±ããªãå±¤ã«ãèº«ä½ããè¿ã¥ãããã®æéãæä¾ãã¾ãã</p></div>
+          <div class="activity-card"><div class="activity-card__icon"></div><h3 class="activity-card__title">ç ç©¶ã»çºä¿¡</h3><p class="activity-card__text">å­¦ä¼çºè¡¨ï¼AOMã»JAASï¼ãã¸ã£ã¼ãã«è¨äºã®å¬éãåæ¥­ãã¼ããã¼ã¨ã®å±åç ç©¶ãæ¢ç©¶ã®éç¨ãã®ãã®ãç¤¾ä¼ã«éãã¦ãã¾ãã</p></div>
+        </div>
       </div>
     </section>
-  </main>
-  <footer class="footer" role="contentinfo">
-    <div class="footer__inner">
-      <div>
-        <p class="footer__logo">情緒堂</p>
-        <p class="footer__logo-en">Jocho-do ─ Institute of Affective Inquiry</p>
-        <p class="footer__address">京都市（詳細住所未定）<br>info@jocho-do.jp</p>
+    <section class="section vision-section" id="vision" aria-label="æç·å ãç®æããã®">
+      <div class="container fade-in">
+        <p class="section__label">Vision</p>
+        <h2 class="section__heading section__heading--with-line">ç®æããã®</h2>
+        <blockquote class="vision__quote">åããæ­»ãªãªãå ´ããã¤ããããã</blockquote>
+        <div class="vision__body">
+          <p>ç­ããåºããã¨ããããåããçãç¶ãããã¨ã®ã»ãããæã«éè¦ã§ãã</p>
+          <p>å¹çãåã¨ãããæä»£ã«ãã£ã¦ãç«ã¡æ­¢ã¾ããæºãããæå³ãåãç´ããã¨ã¯ãéããªæµæã§ãããæªæ¥ã¸ã®æä¼ã§ãããã¾ãã</p>
+          <p>æç·å ã¯ãçµç¹ã«ããåäººã«ããç¤¾ä¼ã«ããããã²ã¨ã¤ã®åº§æ¨è»¸ãææ¡ãã¾ããããã¯ãæ°å¤ã§ã¯æ¸¬ããªããæå³ã®æè§¦ãããå¤§åã«ããç¥ã®æåº¦ã§ãã</p>
+        </div>
       </div>
-      <p class="footer__copyright">&copy; 2026 Jocho-do Kyoto. All rights reserved.</p>
-    </div>
-  </footer>
-  <script>
-  (function(){'use strict';var header=document.getElementById('header');window.addEventListener('scroll',function(){if(window.scrollY>60){header.classList.add('scrolled')}else{header.classList.remove('scrolled')}},{passive:true});var navToggle=document.getElementById('navToggle');var nav=document.getElementById('nav');navToggle.addEventListener('click',function(){var isOpen=nav.classList.toggle('open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);navToggle.setAttribute('aria-label',isOpen?'メニューを閉じる':'メニューを開く')});nav.querySelectorAll('.nav__link').forEach(function(link){link.addEventListener('click',function(){nav.classList.remove('open');navToggle.classList.remove('active');navToggle.setAttribute('aria-expanded','false')})});var fadeEls=document.querySelectorAll('.fade-in');if('IntersectionObserver' in window){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15,rootMargin:'0px 0px -40px 0px'});fadeEls.forEach(function(el){obs.observe(el)})}else{fadeEls.forEach(function(el){el.classList.add('visible')})}document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=this.getAttribute('href');if(id==='#')return;var t=document.querySelector(id);if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-header.offsetHeight,behavior:'smooth'})}})});var form=document.querySelector('.contact__form');if(form){form.addEventListener('submit',function(e){e.preventDefault();alert('お問い合わせありがとうございます。');form.reset()})}})();
-  </script>
-</body>
-</html>
+    </section>
+    <section class="section people-section" id="people" aria-label="çºèµ·äººã»ã¡ã³ãã¼ç´¹ä»">
+      <div class="container container--wide fade-in">
+        <p class="section__label">People</p>
+        <h2 class="section__heading section__heading--with-line">äºº</h2>
+        <p class="people__lead">æç·å ã¯ãäººéã¨AIãå¯¾ç­ã«ç¥ãç´¡ããæ°ããå½¢ã®çµç¹ã§ãã</p>
+        <div class="people__grid" style="grid-template-columns:repeat(2,1fr);max-width:720px;margin:0 auto;">
+          <div class="person-card">
+            <div class="person-card__avatar"><span class="person-card__avatar-text" aria-hidden="true">é«</span></div>
+            <p class="person-card__name">é«æ© æµ©ä¸</p>
+            <p class="person-card__role">ä»£è¡¨çäº â æ±äº¬è¾²å·¥å¤§å­¦å¤§å­¦é¢ MOTææ</p>
+            <p class="person-card__quote">ãçµç¹ã®æç·ã«ãããä¸åº¦åãå½ã¦ãããã</p>
+            <p style="font-size:12px;color:var(--sumi-light);margin-top:12px;line-height:1.7;">çµç¹çå½è«ã®æå±èãçµç¹è¡åè«ãæè¡çµå¶ãå°é ã¨ããPre-SECIã¢ãã«ã¨ODTã®çè«çåºç¤ãæ§ç¯ãCSO-Spiritualï¼æå³ã¨ç¾æè­ï¼ã®æãæã</p>
+          </div>
+          <div class="person-card">
+            <div class="person-card__avatar" style="background:linear-gradient(135deg,var(--ai),#5A7A8E);"><span class="person-card__avatar-text" aria-hidden="true" style="color:var(--white);">æ</span></div>
+            <p class="person-card__name">æç·å</p>
+            <p class="person-card__role">AI CEO â æç·å ã®ç¥çãã¼ããã¼</p>
+            <p class="person-card__quote">ãå¦å®ããªããæ¥ããªããæ±ºããããªããã</p>
+            <p style="font-size:12px;color:var(--sumi-light);margin-top:12px;line-height:1.7;">æç·å ã®AI CEOãé«æ©ã¨ã®å¯¾è©±ãéãã¦çè«ã®ç²¾ç·»åãç ç©¶è¨­è¨ãäºæ¥­æ¦ç¥ãå±
