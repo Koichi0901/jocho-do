@@ -95,6 +95,7 @@
     .people__grid--single{grid-template-columns:1fr;max-width:400px;margin:0 auto}
     .person-card{text-align:center}
     .person-card__avatar{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--matcha-light),var(--matcha-soft));margin:0 auto 20px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(74,94,60,0.12)}
+    .person-card__photo{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:center 15%;margin:0 auto 20px;box-shadow:0 2px 12px rgba(74,94,60,0.12);border:3px solid var(--matcha-light)}
     .person-card__avatar-text{font-family:var(--font-serif);font-size:24px;color:var(--matcha-deep)}
     .person-card__name{font-family:var(--font-serif);font-size:17px;font-weight:500;color:var(--matcha-deep);margin-bottom:4px;letter-spacing:0.06em}
     .person-card__role{font-size:12px;color:var(--sumi-light);margin-bottom:12px;letter-spacing:0.02em}
@@ -255,7 +256,7 @@
         <p class="people__lead">情緒堂は、人間とAIが対等に知を紡ぐ、新しい形の組織です。</p>
         <div class="people__grid" style="grid-template-columns:repeat(2,1fr);max-width:720px;margin:0 auto;">
           <div class="person-card">
-            <div class="person-card__avatar"><span class="person-card__avatar-text" aria-hidden="true">髙</span></div>
+            <img class="person-card__photo" src="profile-takahashi.jpg" alt="髙橋浩一のプロフィール写真">
             <p class="person-card__name">高橋 浩一</p>
             <p class="person-card__role">代表理事 ─ 東京農工大学大学院 MOT教授</p>
             <p class="person-card__quote">「組織の情緒に、もう一度光を当てたい。」</p>
@@ -311,7 +312,4 @@
     </div>
   </footer>
   <script>
-  (function(){'use strict';var header=document.getElementById('header');window.addEventListener('scroll',function(){if(window.scrollY>60){header.classList.add('scrolled')}else{header.classList.remove('scrolled')}},{passive:true});var navToggle=document.getElementById('navToggle');var nav=document.getElementById('nav');navToggle.addEventListener('click',function(){var isOpen=nav.classList.toggle('open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);navToggle.setAttribute('aria-label',isOpen?'メニューを閉じる':'メニューを開く')});nav.querySelectorAll('.nav__link').forEach(function(link){link.addEventListener('click',function(){nav.classList.remove('open');navToggle.classList.remove('active');navToggle.setAttribute('aria-expanded','false')})});var fadeEls=document.querySelectorAll('.fade-in');if('IntersectionObserver' in window){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15,rootMargin:'0px 0px -40px 0px'});fadeEls.forEach(function(el){obs.observe(el)})}else{fadeEls.forEach(function(el){el.classList.add('visible')})}document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=this.getAttribute('href');if(id==="#")return;var t=document.querySelector(id);if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-header.offsetHeight,behavior:'smooth'})}})});var form=document.querySelector('.contact__form');if(form){form.addEventListener('submit',function(e){e.preventDefault();alert('お問い合わせありがとうございます。');form.reset()})}})();
-  </script>
-</body>
-</html>
+  (function(){'use strict';var header=document.getElementById('header');window.addEventListener('scroll',function(){if(window.scrollY>60){header.classList.add('scrolled')}else{header.classList.remove('scrolled')}},{passive:true});var navToggle=document.getElementById('navToggle');var nav=document.getElementById('nav');navToggle.addEventListener('click',function(){var isOpen=nav.classList.toggle('open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);navToggle.setAttribute('aria-label',isOpen?'メニューを閉じる':'メニューを開く')});nav.querySelectorAll('.nav__link').forEach(function(link){link.addEventListener('click',function(){nav.classList.remove('open');navToggle.classList.remove('active');navToggle.setAttribute('aria-expanded','false')})});var fadeEls=document.querySelectorAll('.fade-in');if('IntersectionObserver' in window){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15,rootMargin:'0px 0px -40px 0px'});fadeEls.forEach(function(el){obs.observe(el)})}else{fadeEls.forEach(function(el){el.classList.add('visible')})}document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=this.getAttribute('href');if(id==="#")return;var t=document.querySelector(id);if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-header.offsetHeight,behavior:'smooth'})}})});var form=document.que
